@@ -29,6 +29,15 @@ ul {
     <li>HTML で1枚のページを作った</li>
   </ul>
   <p><a href="https://github.com/rxefillz-dotcom/my-learning-log">my-learning-log のリポジトリ</a></p>
+  <button id="btn">クリック</button>
+  <p id="message">ここが変わります</p>
+  <script>
+    document.getElementById("btn").oneclick = function() {
+      document.getElementById("message").textContent = "ボタンが押されました！";
+
+    };
+</script>
+
 </body>
 </html>
 

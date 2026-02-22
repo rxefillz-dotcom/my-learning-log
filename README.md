@@ -9,3 +9,6 @@ CSS(見た目＝色、大きさ、並べ方など)を決めるための言語。
 Javaの学習、Hello,javaをコンパイル・実行して「Hello,Java!」が表示された。
 変数と型(int(整数),String（文字列）) Variablese.java
 ifとFor　if(条件)、For（初期化;、条件;、更新）で繰り返し、else 「そうでなければ」「それ以外なら」→ if の条件に当てはまらなかったときに実行するブロック。
+2/22 今週の復習。JavaとJavaScriptを間違えて学んでしまって一日遅れた。
+午後からJavaScriptを学んでindex.htmlに「ボタンを押したら表示が変わる」を追加した。
+getElementById=IDで要素を取得。oneclick=クリックされた時の処理。textcontent=表示テキストを変える。
