@@ -29,14 +29,25 @@ ul {
     <li>HTML で1枚のページを作った</li>
   </ul>
   <p><a href="https://github.com/rxefillz-dotcom/my-learning-log">my-learning-log のリポジトリ</a></p>
-  <button id="btn">クリック</button>
-  <p id="message">ここが変わります</p>
-  <script>
-    document.getElementById("btn").oneclick = function() {
-      document.getElementById("message").textContent = "ボタンが押されました！";
 
-    };
-</script>
+    <button id="btn">クリック</button>
+    <p id="message">0回クリックしました</p>
+    <script>
+      let count = 0;
+      function countUp() {
+        count++;
+        document.getElementById("message").textContent = count + "回クリックしました";
+      }
+    document.getElementById("btn").onclick = countUp;
+    </script>
+<button id="btn1">クリック</button>
+<p id="message1">ここが変わります</p>
+<script>
+  document.getElementById("btn1").onclick = function() {
+    document.getElementById("message1").textContent = "ボタンが押されました！";
+  }
+  </script>
+  
 
 </body>
 </html>
