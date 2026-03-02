@@ -16,6 +16,8 @@ ul {
   flex-direction: column;
   gap: 8px;
 }
+.hide { display: none; }
+    .big { font-size: 24px; }
   </style>
 </head>
 <body>
@@ -49,6 +51,53 @@ ul {
   </script>
   
 
+
+
+
+
+<ul><li class="item">A</li><li class="item">B</li><li class="item">C</li>
+</ul>
+
+<script>
+  const itemEls = document.querySelectorAll(".item");
+  console.log(itemEls);
+  itemEls.forEach(function(li) {
+    li.style.color = "green";
+    li.textContent = li.textContent + "!";
+    itemEls[1].style.color = "red";  });
+    itemEls.forEach(function(li, i) {
+      if (i % 2 === 0) {
+        li.style.color = "blue";
+      }
+    });
+
+</script>
+<p class="msg">この文を隠したり出したり</p>
+<button id="toggleBtn">大きく/小さく</button>
+
+<script>
+  
+const msg = document.querySelector(".msg");
+const toggleBtn = document.getElementById("toggleBtn");
+
+toggleBtn.onclick = function() {
+  msg.classList.toggle("big");
+};
+
+</script>
+
+<li class="row">HTML</li>
+<li class="row">CSS</li>
+<li class="row">JavaScript</li>
+<script>
+  const rows = document.querySelectorAll(".row");
+  
+  rows.forEach(function(li) {
+    li.onclick = function() {
+    this.classList.toggle("hide");
+   };
+  });
+
+</script>
 </body>
 </html>
-
