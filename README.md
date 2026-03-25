@@ -44,3 +44,4 @@
      3/23 htmlにフォーム送信サービスのエンドポイントを設置してメールが実際に届く確認までした。
      次はVercelで公開URLを出す＋環境変数設定。
      3/24 ローカル動作 → Formspree連携 → GitHub push → Vercel公開 → 公開URLで送信確認
+     3/25 今日の作業では fnatic-contact-lp を商品化レベルに仕上げた。FAQをアコーディオン化し、OGP（og:image / twitter:image）と共有表示を整備。READMEに公開URL・使い方・スクショ（PC/スマホ/送信成功）を最終セットで反映し、トップ見出しのスマホ改行も見やすく調整した。lint/build と表示確認まで行い、Instagram向けの共有見え方もチェックできた。
